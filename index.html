@@ -34,5 +34,18 @@
         <p>&copy; 2026 Turtleclimber</p>
       </footer>
     </div>
+
+    <script>
+      const dateElement = document.querySelector('.date');
+      const today = new Date();
+      const dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      };
+
+      dateElement.textContent = today.toLocaleDateString('en-US', dateOptions);
+    </script>
   </body>
 </html>
